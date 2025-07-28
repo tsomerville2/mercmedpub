@@ -1,0 +1,19 @@
+[project]
+name = "medicalresearchagent"
+version = "0.1.0"
+description = "medical research assist that reads available mcp"
+authors = [
+    {name = "tsomerville2", email = "travis.somerville@gmail.com"},
+]
+dependencies = ["warpcoder>=0.3.6", "behave>=1.2.6", "python-dotenv>=1.1.1", "fastapi>=0.116.1", "uvicorn>=0.35.0", "prefect>=3.2.15", "httpx>=0.28.1", "mcp>=1.12.2", "sqlalchemy>=2.0.41"]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
